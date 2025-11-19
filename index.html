@@ -23,134 +23,136 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-  /* Body */
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #006400; /* dark green */
-    color: #fff; /* changed to white for better contrast */
-    line-height: 1.6;
-  }
-
-  /* Header / Hero Section */
-  header {
-    background: linear-gradient(135deg, #006400, #004d00); /* dark green gradient */
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-  }
-  header h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4em;
-    margin: 0;
-    letter-spacing: 2px;
-  }
-  header p {
-    font-size: 1.5em;
-    margin-top: 10px;
-    font-weight: 600;
-  }
-
-  /* Section Titles */
-  section h2 {
-    font-family: 'Great Vibes', cursive;
-    color: #006400; /* dark green */
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
-
-  /* Sections */
-  section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-    text-align: center;
-  }
-  section p {
-    font-size: 1.2em;
-    color: #fff; /* white text for contrast */
-  }
-
-  /* Gallery */
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .gallery img {
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-  }
-  .gallery img:hover {
-    transform: scale(1.05);
-  }
-
-  /* RSVP Form */
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 20px auto;
-    text-align: left;
-  }
-  label {
-    margin-top: 10px;
-    font-weight: 600;
-    color: #006400; /* dark green */
-  }
-  input, select, textarea, button {
-    padding: 12px;
-    margin-top: 5px;
-    font-size: 1em;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    width: 100%;
-  }
-  textarea {
-    resize: vertical;
-  }
-  button {
-    background: #006400; /* dark green */
-    color: white;
-    border: none;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background 0.3s;
-  }
-  button:hover {
-    background: #004d00; /* darker green on hover */
-  }
-
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 30px;
-    background: #004d00; /* dark green */
-    font-size: 1em;
-    color: #006400; /* text green */
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 3em;
+    /* Body */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #ffffff; /* white background */
+      color: #000000; /* black text */
+      line-height: 1.6;
     }
+
+    /* Header / Hero Section */
+    header {
+      background: linear-gradient(135deg, #556B2F, #6B8E23); /* olive green gradient */
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    /* Section Titles */
     section h2 {
-      font-size: 2em;
+      font-family: 'Great Vibes', cursive;
+      color: #556B2F; /* olive green */
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px 20px;
+      text-align: center;
+      background: #ffffff; /* white background for each section */
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    section p {
+      font-size: 1.2em;
+      color: #000000; /* black text */
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
     }
     .gallery img {
-      width: 80%;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
     }
-  }
-</style>
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
 
+    /* RSVP Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #556B2F; /* olive green */
+    }
+    input, select, textarea, button {
+      padding: 12px;
+      margin-top: 5px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background: #6B8E23; /* dark olive green */
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #556B2F; /* olive green hover */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000000; /* black footer */
+      font-size: 1em;
+      color: #ffffff; /* white text */
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 3em;
+      }
+      section h2 {
+        font-size: 2em;
+      }
+      .gallery img {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
 

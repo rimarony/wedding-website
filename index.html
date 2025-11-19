@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rima & Rony Wedding</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      text-align: center; 
-      background: #fff0f5; 
-      color: #333; 
-      padding: 50px;
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff0f5;
+      color: #333;
     }
-    h1 { color: #d6336c; }
-    p { font-size: 1.2em; }
-    .container { max-width: 600px; margin: auto; }
+
+    /* Header / Hero Section */
+    header {
+      background: #d6336c;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      color: #d6336c;
+      border-bottom: 2px solid #d6336c;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    /* RSVP Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea, button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #d6336c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b52a55;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f8e8f2;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <!-- Header -->
+  <header>
     <h1>Rima & Rony</h1>
     <p>We are getting married! 🎉</p>
     <p>Save the Date: 01 Jan 2026</p>
-    <p>Location: Beautiful Venue</p>
-  </div>
+  </header>
+
+  <!-- Our Story -->
+  <section>
+    <h2>Our Story</h2>
+    <p>It all began when Rima and Rony met… and the journey has been full of love, laughter, and adventures. Now, we are excited to celebrate our special day with you!</p>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Rima & Rony 1">
+      <img src="image2.jpg" alt="Rima & Rony 2">
+      <img src="image3.jpg" alt="Rima & Rony 3">
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section>
+    <h2>RSVP</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message / Comments"></textarea>
+      <button type="submit">Send RSVP</button>
+    </form>
+    <p style="text-align:center; font-size:0.9em; color:#555;">*Form powered by Formspree (free, no backend needed)*</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    ❤️ Made with love by Rima & Rony
+  </footer>
+
 </body>
 </html>

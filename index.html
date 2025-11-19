@@ -23,133 +23,134 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Body */
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #fff0f5;
-      color: #333;
-      line-height: 1.6;
-    }
+  /* Body */
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #006400; /* dark green */
+    color: #fff; /* changed to white for better contrast */
+    line-height: 1.6;
+  }
 
-    /* Header / Hero Section */
-    header {
-      background: linear-gradient(135deg, #ffb6c1, #ff69b4);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
+  /* Header / Hero Section */
+  header {
+    background: linear-gradient(135deg, #006400, #004d00); /* dark green gradient */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  /* Section Titles */
+  section h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #006400; /* dark green */
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* Sections */
+  section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  section p {
+    font-size: 1.2em;
+    color: #fff; /* white text for contrast */
+  }
+
+  /* Gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .gallery img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RSVP Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  label {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #006400; /* dark green */
+  }
+  input, select, textarea, button {
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    background: #006400; /* dark green */
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #004d00; /* darker green on hover */
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #004d00; /* dark green */
+    font-size: 1em;
+    color: #006400; /* text green */
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
     header h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 4em;
-      margin: 0;
-      letter-spacing: 2px;
+      font-size: 3em;
     }
-    header p {
-      font-size: 1.5em;
-      margin-top: 10px;
-      font-weight: 600;
-    }
-
-    /* Section Titles */
     section h2 {
-      font-family: 'Great Vibes', cursive;
-      color: #d6336c;
-      font-size: 2.5em;
-      text-align: center;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
-    /* Sections */
-    section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    section p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    /* Gallery */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
+      font-size: 2em;
     }
     .gallery img {
-      width: 250px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+      width: 80%;
     }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+  }
+</style>
 
-    /* RSVP Form */
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: 20px auto;
-      text-align: left;
-    }
-    label {
-      margin-top: 10px;
-      font-weight: 600;
-      color: #d6336c;
-    }
-    input, select, textarea, button {
-      padding: 12px;
-      margin-top: 5px;
-      font-size: 1em;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-    textarea {
-      resize: vertical;
-    }
-    button {
-      background: #d6336c;
-      color: white;
-      border: none;
-      margin-top: 15px;
-      cursor: pointer;
-      font-size: 1.1em;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #b52a55;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #ffe6f0;
-      font-size: 1em;
-      color: #d6336c;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 3em;
-      }
-      section h2 {
-        font-size: 2em;
-      }
-      .gallery img {
-        width: 80%;
-      }
-    }
-  </style>
 </head>
 <body>
 
